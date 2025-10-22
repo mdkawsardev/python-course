@@ -1,3 +1,4 @@
+import random
 # This chapter we will discuss about python variable
 # A variable is a container to store data
 # In python programming variable is case-sensitive, (age, Age, and AGE) different type of variable
@@ -25,7 +26,15 @@ print(she)
 fruits = ['apple', 'banana', 'orange']
 apple, banana, orange = fruits
 print(banana)
+
+# printing multiple variables separated by comma
 py = "Python"
 Is = "is"
 awe = "awesome"
 print(py, Is, awe)
+
+com = 4j
+print(type(com))
+
+# to generate random number first random module imported
+print(random.randrange(6000, 9000))
