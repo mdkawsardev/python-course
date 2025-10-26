@@ -39,3 +39,7 @@ print(newFlower1)
 flower2 = ['rose1', 'waterlily2', 'woodrose3', 'joba4']
 newFlower2 = [x for x in flower2 if 'o' in x] # This is list comprehension/short syntex
 print(newFlower2)
+
+list5 = ["Name", "Age", "Gender", "Identity"]
+listCopy = list5.copy() # This method copies list
+print(listCopy)
