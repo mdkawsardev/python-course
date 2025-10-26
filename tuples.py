@@ -66,7 +66,3 @@ print(joinTuples)
 print(multipleTuple.count("apple")) # This method counts specified value, how many times item is used in tuple
 print(multipleTuple.index("apple")) # This method finds index number of specified value
 
-if multipleTuple.count("apple") > 2 :
-    print("More than 2")
-else: 
-    print("Less than 2 or equal")
