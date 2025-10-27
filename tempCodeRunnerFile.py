@@ -1,2 +1,1 @@
-n)
-print(yellow)
+"kawsar", "imran", "emon"
