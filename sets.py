@@ -26,4 +26,3 @@ myTuple = ("Phone", "Tv", "Wifi")
 set9 = set5.union(myTuple) # The union() method allows you to join a set with other data types, like lists or tuples.
 print(set5)
 print(set8)
-print(set9)
