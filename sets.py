@@ -24,6 +24,31 @@ set8 = set3.union(set4, set6, set7) # To add multiple sets
 set8 = set3 | set4 | set6 | set7 # same as union method. This joins sets to sets not with other data-type like union()
 myTuple = ("Phone", "Tv", "Wifi")
 set9 = set5.union(myTuple) # The union() method allows you to join a set with other data types, like lists or tuples.
+# Both union() and update() will ignore any duplicate items.
+set10 = {"mobile", "laptop", "desktop"}
+set11 = {"mobile", "pad", "remote"}
+set12 = set10.update(set11) # Ignores duplicate items
+
 print(set5)
 print(set8)
 print(set9)
+print(set10)
+print(set12)
+myfruits = {"apple", "banana", "cherry"}
+drinks = {"apple", "mojo", "matha"}
+together = myfruits.intersection(drinks) # This returns new set with only duplicate items. Both are same
+together = myfruits & drinks # This returns new set with only duplicate items. same as intersection() method but it's just for sets not for other data type, which can intersection()
+print(together)
+set14 = {"apple", "banana", "cherry"}
+set15 = {"mojo", "matha", "banana"}
+set16 = set14.intersection_update(set15) # method will also keep ONLY the duplicates, but it will change the original set instead of returning a new set.
+print(set14)
+set1 = {"apple", 1, "banana", 0, "cherry"}
+set2 = {False, "google", "microsoft", "apple", True}
+
+set3 = set1.intersection(set2)
+print(set3)
+setsToFroz = frozenset({"hati", "gondar", "bag"})
+copy = setsToFroz.copy()
+print(setsToFroz)
+print(copy)
