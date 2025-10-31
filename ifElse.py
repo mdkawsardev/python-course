@@ -32,3 +32,21 @@ print("")
 username = ""
 display_name = username if username else "Guest"
 print(display_name)
+
+# match 
+point = 33
+match point:
+    case a if point >= 90:
+        print("Your grade is: A+")
+    case b if point >= 80:
+        print("Your grade is: A")
+    case c if point >= 70:
+        print("Your grade is: A-")
+    case d if point >= 60:
+        print("Your grade is: B")
+    case e if point >= 50:
+        print("Your grade is: C")
+    case f if point >= 33:
+        print("Your grade is: D")
+    case _:
+        print("You're fail")
