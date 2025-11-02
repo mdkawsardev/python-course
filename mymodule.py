@@ -1,7 +1,10 @@
-import first
+from first import list1
+import datetime
 import platform
-display = first.list1
-for x in display:
-    print(x)
 
-print(platform.system())
+print(list1[0])
+print(datetime.datetime.now())
+print(datetime.datetime.now().year)
+print(datetime.datetime.now().strftime("%z"))
+# operating = platform.system()
+# print(dir(platform))
